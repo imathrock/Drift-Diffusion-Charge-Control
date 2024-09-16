@@ -1,0 +1,14 @@
+* C:\Users\imath\Documents\LTspice\Draft13.asc
+D1 N001 N002 D
+D2 N001 N002 D
+R2 N001 N002 1Meg
+C1 N001 N002 50pf
+R1 N002 0 64.9 tol=1 pwr=0.1
+V1 N001 0 V
+.model D D
+.lib C:\Users\imath\AppData\Local\LTspice\lib\cmp\standard.dio
+.diode D1 Is=1e-9,rs=1
+.diode D2 Is=1e-9,rs=1
+.dc V1 -5 5 0.05
+.backanno
+.end
